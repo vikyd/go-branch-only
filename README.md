@@ -10,10 +10,17 @@ This repository has semver branch only, without any tags.
 # create empty dir outside GOPATH
 mkdir ~/test-go-branch
 
+cd ~/test-go-branch
+
 # init empty go module
 go mod init example.com/a/b
 
+cat go.mod
+
 # go get this module
 go get -v github.com/vikyd/go-branch-only
+
+# check version
+cat go.mod
 
 ```
